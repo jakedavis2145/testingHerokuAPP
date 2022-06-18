@@ -1,3 +1,5 @@
+const process = require('process')
+
 const express = require("express");
 const app =express();
 const importData = require("./data.json");
@@ -14,8 +16,6 @@ app.get("/lists", (req, res) => {
 app.listen(port, () => {
     console.log(`example app is listening on port http://localhost:${port}`)
 });
-
-
 
 
 
